@@ -1,8 +1,11 @@
 import React from 'react'
-import DarkMode from './components/darkMode/page'
+import './App.css'
+import { DarkMode } from './components/Page/dark-mode'
 
-export default function App() {
+export const App = () => {
   return (
-    <div><DarkMode/></div>
+    <div>
+      <DarkMode/>
+    </div>
   )
 }
