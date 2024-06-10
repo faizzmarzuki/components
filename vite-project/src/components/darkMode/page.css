@@ -1,0 +1,65 @@
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    font-family: monospace;
+}
+
+.main-body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-darkMode {
+    background-color: #b7b7b7;
+    border: 1px solid #aaa;
+    border-radius: 99px;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+    width: 50px;
+    height: 28px;
+    transition: background-color 0.1s ease, border-color 0.2 ease;
+    -webkit-transition: background-color 0.1s ease, border-color 0.2 ease;
+    -moz-transition: background-color 0.1s ease, border-color 0.2 ease;
+    -ms-transition: background-color 0.1s ease, border-color 0.2 ease;
+    -o-transition: background-color 0.1s ease, border-color 0.2 ease;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.748);
+    position: relative;
+}
+
+.btn-darkMode .thumb {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 99px;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    -o-border-radius: 99px;
+    transform: translateX(0) translateY(-50%);
+    -webkit-transform: translateX(0) translateY(-50%);
+    -moz-transform: translateX(0) translateY(-50%);
+    -ms-transform: translateX(0) translateY(-50%);
+    -o-transform: translateX(0) translateY(-50%);
+    transition: left 0.15s ease;
+    -webkit-transition: left 0.15s ease;
+    -moz-transition: left 0.15s ease;
+    -ms-transition: left 0.15s ease;
+    -o-transition: left 0.15s ease;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+}
+
+.btn-darkMode.toggled {
+    background-color: green;
+}
+
+.btn-darkMode.toggled .thumb {
+    left: calc(50px - 25px);
+}
